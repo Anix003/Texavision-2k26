@@ -11,12 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${fonts.justSans.variable} ${fonts.permanentMarker.variable} antialiased`}
-      >
-        <SmoothScrolling root={true}>
-          {children}
-        </SmoothScrolling>
+      <body className={`${fonts.justSans.variable} ${fonts.permanentMarker.variable} antialiased`}>
+        <SmoothScrolling>{children}</SmoothScrolling>
       </body>
     </html>
   );
