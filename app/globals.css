@@ -1,16 +1,74 @@
 @import 'tailwindcss';
-@custom-variant dark (&:is(.dark, .dark *));
 
 :root {
-  /* TODO Add color vars */
-}
+  /* =========================
+     Neutrals & Base Colors
+     ========================= */
+  --color-cream: #faf7f2;
+  --color-sand: #e8dcc8;
+  --color-vanilla-cream: #fef3c7;
+  --color-peach-cream: #fff7ed;
 
-.dark {
-  /* TODO Dark theme colors will be modified later */
+  --color-ice-white: #f0f9ff;
+  --color-rose-white: #fff1f2;
+  --color-lilac-white: #faf5ff;
+
+  --color-cool-grey: #cbd5e1;
+
+  --color-steel: #334155;
+  --color-charcoal: #18181b;
+  --color-dark-text: #1f1a16;
+
+  /* =========================
+     Purples & Lavenders
+     ========================= */
+  --color-purple-rich: #4c1d95;
+  --color-purple-soft: #c4b5fd;
+  --color-lavender-soft: #e9d5ff;
+
+  /* =========================
+     Blues
+     ========================= */
+  --color-blue-deep: #1e40af;
+
+  /* =========================
+     Greens & Teals
+     ========================= */
+  --color-teal: #14b8a6;
+  --color-sea-green: #0d9488;
+  --color-mint: #99f6e4;
+
+  /* =========================
+     Reds & Pinks (Accents)
+     ========================= */
+  --color-rose-deep: #be123c;
 }
 
 @theme {
-  /* TODO Add color vars into theme colors */
+  --color-cream: var(--color-cream);
+  --color-sand: var(--color-sand);
+  --color-vanilla-cream: var(--color-vanilla-cream);
+  --color-peach-cream: var(--color-peach-cream);
+  --color-ice-white: var(--color-ice-white);
+  --color-rose-white: var(--color-rose-white);
+  --color-lilac-white: var(--color-lilac-white);
+  --color-cool-grey: var(--color-cool-grey);
+
+  --color-steel: var(--color-steel);
+  --color-charcoal: var(--color-charcoal);
+  --color-dark-text: var(--color-dark-text);
+
+  --color-purple-rich: var(--color-purple-rich);
+  --color-purple-soft: var(--color-purple-soft);
+  --color-lavender-soft: var(--color-lavender-soft);
+
+  --color-blue-deep: var(--color-blue-deep);
+
+  --color-teal: var(--color-teal);
+  --color-sea-green: var(--color-sea-green);
+  --color-mint: var(--color-mint);
+
+  --color-rose-deep: var(--color-rose-deep);
 }
 
 body {
