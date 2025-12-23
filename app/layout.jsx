@@ -1,5 +1,6 @@
 import './globals.css';
 import fonts from './font';
+import SmoothScrolling from '@/wrappers/SmoothScrolling';
 
 export const metadata = {
   title: 'Texavision-2k26',
@@ -10,9 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${fonts.justSans.variable} ${fonts.permanentMarker.variable} antialiased`}>
-        {children}
-      </body>
+      <SmoothScrolling root={true}>
+        <body
+          className={`${fonts.justSans.variable} ${fonts.permanentMarker.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </SmoothScrolling>
     </html>
   );
 }
