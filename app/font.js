@@ -35,7 +35,7 @@ const gillianJoe = localFont({
 });
 
 const grindyBrush = localFont({
-  src: [{ path: '../assets/fonts/grindy-brush/Grindy Brush.otf', weight: '400', style: 'normal' }],
+  src: [{ path: '../assets/fonts/grindy-brush/GrindyBrush.otf', weight: '400', style: 'normal' }],
   variable: '--font-grindy-brush',
   display: 'swap',
 });

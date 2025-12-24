@@ -10,12 +10,26 @@ export const metadata = {
     'Texavision-2k26 - Official web application for the Texavision 2k26 event and related activities.',
 };
 
+const fontsArrayVars = [
+  fonts.centrion.variable,
+  fonts.drunkMillionaire.variable,
+  fonts.gillianJoe.variable,
+  fonts.grindyBrush.variable,
+  fonts.sprayPaintDemo.variable,
+  fonts.medievalSharp.variable,
+  fonts.protestRevolution.variable,
+  fonts.nosifer.variable,
+  fonts.rubikDoodleShadow.variable,
+  fonts.rubikGlitchPop.variable,
+  fonts.rubikWetPaint.variable,
+  fonts.rubikMarkerHatch.variable,
+  fonts.rubikMaps.variable,
+];
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${fonts.centrion.variable} ${fonts.drunkMillionaire.variable} ${fonts.gillianJoe.variable} ${fonts.grindyBrush.variable} ${fonts.sprayPaintDemo.variable} ${fonts.medievalSharp.variable} ${fonts.protestRevolution.variable} ${fonts.nosifer.variable} ${fonts.rubikDoodleShadow.variable} ${fonts.rubikGlitchPop.variable} ${fonts.rubikWetPaint.variable} ${fonts.rubikMarkerHatch.variable} ${fonts.rubikMaps.variable} antialiased`}
-      >
+      <body className={`${fontsArrayVars.join(' ')} antialiased`}>
         <SmoothScrolling>
           {children}
           <Footer />
