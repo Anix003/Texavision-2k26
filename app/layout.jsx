@@ -12,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${fonts.justSans.variable} ${fonts.permanentMarker.variable} antialiased`}>
+      <body
+        className={`${fonts.centrion.variable} ${fonts.drunkMillionaire.variable} ${fonts.gillianJoe.variable} ${fonts.grindyBrush.variable} ${fonts.sprayPaintDemo.variable} ${fonts.medievalSharp.variable} ${fonts.protestRevolution.variable} ${fonts.nosifer.variable} ${fonts.rubikDoodleShadow.variable} ${fonts.rubikGlitchPop.variable} ${fonts.rubikWetPaint.variable} ${fonts.rubikMarkerHatch.variable} ${fonts.rubikMaps.variable} antialiased`}
+      >
         <SmoothScrolling>
           {children}
           <Footer />
