@@ -1,4 +1,5 @@
 import './globals.css';
+import '../assets/stylesheets/css/utils.css';
 import fonts from './font';
 import SmoothScrolling from '@/wrappers/SmoothScrolling';
 import Footer from '@/components/shared/footer/Footer';
