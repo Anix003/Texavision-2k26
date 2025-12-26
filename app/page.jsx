@@ -13,6 +13,8 @@ const Home = () => {
       <Performances />
       <Merch />
       <Gallery />
+      {/* Remove when whole page is done, this is for poster scroll */}
+      <div className="h-[200vh]"></div>
     </>
   );
 };
